@@ -1,0 +1,212 @@
+[
+    {
+        "type": "Silver",
+        "purchase_date": "04/08/2013",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 20,
+        "mint_year": "2013",
+        "source": "Gainesville Coins",
+        "cost": 629.29    
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "05/15/2013",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 5,
+        "mint_year": "2013",
+        "source": "A-Coing & Stamp Gallery, Inc.",
+        "cost": 127.15    
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "06/15/2013",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 5,
+        "mint_year": "2013",
+        "source": "Bonanza Coins",
+        "cost": 137.80  
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "03/19/2015",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 10,
+        "mint_year": "2015",
+        "source": "Gainesville Coins",
+        "cost": 211.25    
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "09/18/2015",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 5,
+        "mint_year": "2015",
+        "source": "JM Bullion",
+        "cost": 107.80  
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "09/27/2015",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 5,
+        "mint_year": "2015",
+        "source": "JM Bullion",
+        "cost": 108.47 
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "05/19/2016",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 5,
+        "mint_year": "2016",
+        "source": "JM Bullion",
+        "cost": 103.79
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "06/06/2016",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 5,
+        "mint_year": "2016",
+        "source": "JM Bullion",
+        "cost": 103.38
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "06/16/2016",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 5,
+        "mint_year": "2016",
+        "source": "JM Bullion",
+        "cost": 104.83
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "07/02/2016",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 5,
+        "mint_year": "2016",
+        "source": "JM Bullion",
+        "cost": 121.15
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "07/16/2016",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 5,
+        "mint_year": "2016",
+        "source": "JM Bullion",
+        "cost": 123.44
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "07/27/2016",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 5,
+        "mint_year": "2016",
+        "source": "JM Bullion",
+        "cost": 122.24
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "04/12/2018",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 20,
+        "mint_year": "2017",
+        "source": "Provident Metals",
+        "cost": 391.70
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "04/19/2018",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 10,
+        "mint_year": "2013",
+        "source": "Apmex",
+        "cost": 232.60
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "04/19/2018",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 10,
+        "mint_year": "2016",
+        "source": "Apmex",
+        "cost": 227.40
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "04/19/2018",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 20,
+        "mint_year": "2018",
+        "source": "GovMint",
+        "cost": 366.00
+    },
+    {
+        "type": "Gold",
+        "purchase_date": "05/02/2018",
+        "description": "American Gold Eagle",
+        "ozt": 1,
+        "quantity": 1,
+        "mint_year": "2018",
+        "source": "Apmex",
+        "cost": 1440.09
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "05/17/2018",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 60,
+        "mint_year": "2011",
+        "source": "Apmex",
+        "cost": 1195.20
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "05/17/2018",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 20,
+        "mint_year": "2015",
+        "source": "Apmex",
+        "cost": 398.40
+    },
+    {
+        "type": "Silver",
+        "purchase_date": "05/17/2018",
+        "description": "American Silver Eagle",
+        "ozt": 1,
+        "quantity": 20,
+        "mint_year": "2017",
+        "source": "Apmex",
+        "cost": 398.40
+    },
+    {
+        "type": "Gold",
+        "purchase_date": "07/17/2019",
+        "description": "American Gold Eagle",
+        "ozt": 0.25,
+        "quantity": 1,
+        "mint_year": "2018",
+        "source": "Apmex",
+        "cost": 646.45
+    }
+]
