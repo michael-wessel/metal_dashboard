@@ -162,6 +162,7 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
     line-height: 1.2;
     letter-spacing: -.1rem;
     margin-bottom: 2rem;
+    font-weight: bold;
   }
   h2 {
     font-size: 3.6rem;
@@ -229,15 +230,15 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
   
   
   .main-svg{
-    font-family: "Open Sans Semi Bold"
+    font-family: "Roboto Bold"
   }
   
   .gtitle{
-    font-family: "Open Sans Semi Bold" !important
+    font-family: "Roboto Bold" !important
   }
   
   .g-title{
-    font-family: "Open Sans Semi Bold"
+    font-family: "Roboto Bold"
   }
   
   
@@ -431,13 +432,13 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
   }
   
   h1, h2, h3, h4, h5 {
-    font-family: "Open Sans Semi Bold";
+    font-family: "Roboto";
     letter-spacing: 2.1px;
     font-size: 21px;
     padding-left: 12px;
   }
   p {
-    font-family: "Open Sans Light";
+    font-family: "Roboto";
     font-weight: 400;
     font-size: 14px;
     padding-left: 12px;
@@ -523,7 +524,7 @@ Taken from https://codepen.io/chriddyp/pen/bWLwgP.css
   
   #date {
     background-color: #1e1e1e;
-    font-family: "Open Sans Light";
+    font-family: "Roboto Light";
     font-weight: 400;
     color: #dbdbdb;
     border: 0.5px solid #dbdbdb44;
