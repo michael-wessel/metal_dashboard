@@ -5,7 +5,7 @@ from utilities import utilities
 buy = go.Figure(
     layout=go.Layout(
         template='plotly_dark',
-        margin={'t': 0, 'b': 0, 'l': 0, 'r': 20},
+        margin={'t': 25, 'b': 25, 'l': 25, 'r': 25},
         showlegend=False, 
         annotations=[
             dict(
@@ -49,7 +49,7 @@ buy.update_yaxes(automargin=True)
 spot = go.Figure(
     layout=go.Layout(
         template='plotly_dark',
-        margin={'t': 0, 'b': 0, 'l': 20, 'r': 0},
+        margin={'t': 25, 'b': 25, 'l': 25, 'r': 25},
         showlegend=False, 
         annotations=[
             dict(

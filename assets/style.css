@@ -78,13 +78,39 @@ p {
   margin-right: auto;
 }
 .div-for-table {
-  font-family: "Open Sans";
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 60px;
-  padding-right: 60px;
   font-size: 12px;
-} 
+}
+table {
+  width: 98%;
+  border-collapse: collapse;
+}
+tr {
+  border-bottom: 1pt solid white;
+}
+td:nth-of-type(2) {
+  text-align:center;
+}
+th:nth-of-type(2) {
+  text-align:center;
+}
+td:nth-of-type(3) {
+  text-align:right;
+}
+th:nth-of-type(3) {
+  text-align:right;
+}
+td:nth-of-type(4) {
+  text-align:right;
+}
+th:nth-of-type(4) {
+  text-align:right;
+}
+td:nth-of-type(5) {
+  text-align:right;
+}
+th:nth-of-type(5) {
+  text-align:right;
+}
 
 /* Tab style ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 .custom-tabs-container {

@@ -2,7 +2,7 @@ import dash
 import dash_core_components as dcc 
 import dash_html_components as html
 import dash_bootstrap_components as dbc
-from utilities import utilities, donuts, line
+from utilities import utilities, donuts, line, table
 
 # Initialize the app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
@@ -14,16 +14,32 @@ app.layout = dbc.Container(
             dbc.Col(
                 [
                     html.H1('STACK VALUE TRACKER'),
-                    html.H3('Visualizing my precious metal stack with Python and Plotly Dash')
+                    html.H3('Visualizing my precious metal stack with Python and Plotly Dash'),
+                    html.Hr()
                 ]
             )
         ), 
         # Middle row
         dbc.Row(
             [
-                dcc.Graph(figure=line.silver, style={'width': '60%', 'display': 'inline-block'}),
-                dcc.Graph(figure=donuts.buy, style={'width': '20%', 'display': 'inline-block'}),
-                dcc.Graph(figure=donuts.spot, style={'width': '20%', 'display': 'inline-block'}),
+                dbc.Col(
+                    [
+                        html.Div(
+                        className='div-for-table',                                                       
+                        children=[table.generate_table(table.df)], style={'display': 'inline-block', 'height': '265px', 'overflow': 'auto'}
+                        )
+                    ], width=6
+                ),
+                dbc.Col(
+                    [
+                        dbc.Row(
+                            [
+                                dcc.Graph(figure=donuts.buy, style={'width': '50%', 'display': 'inline-block'}),
+                                dcc.Graph(figure=donuts.spot, style={'width': '50%', 'display': 'inline-block'}),  
+                            ], style={'height': '100%'}
+                        )
+                    ], width=6
+                )
             ], style={'height': '30%'}
         ),
         # Bottom row
