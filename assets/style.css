@@ -50,14 +50,17 @@ H4 {
 table {
   width: 100%;
   font-family: "Open Sans";
+  border-collapse: separate;
+  border-spacing: 0;
 }
 th {
-  color: black;
-  background: #f9f9f9;
+  color: white;
+  background: #111111;
   position: sticky;
   top: 0; /* Don't forget this, required for the stickiness */
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
   letter-spacing: 1.1px;
+  border-bottom: 1pt solid #dbdbdb44;
 }
 td:nth-of-type(2) {
   text-align:center;

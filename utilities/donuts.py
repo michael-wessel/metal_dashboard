@@ -5,7 +5,7 @@ from utilities import utilities
 buy = go.Figure(
     layout=go.Layout(
         template='plotly_dark',
-        margin={'t': 25, 'b': 25, 'l': 25, 'r': 25},
+        margin={'t': 25, 'b': 35, 'l': 25, 'r': 25},
         showlegend=False, 
         annotations=[
             dict(
@@ -20,7 +20,7 @@ buy = go.Figure(
             dict(
                 text='PURCHASE PRICE',
                 x=0.5,
-                y=0.45,
+                y=0.435,
                 font_size=14,
                 showarrow=False
             )
@@ -49,7 +49,7 @@ buy.update_yaxes(automargin=True)
 spot = go.Figure(
     layout=go.Layout(
         template='plotly_dark',
-        margin={'t': 25, 'b': 25, 'l': 25, 'r': 25},
+        margin={'t': 25, 'b': 35, 'l': 25, 'r': 25},
         showlegend=False, 
         annotations=[
             dict(
@@ -64,7 +64,7 @@ spot = go.Figure(
             dict(
                 text='SPOT PRICE',
                 x=0.5,
-                y=0.45,
+                y=0.435,
                 font=dict(
                     size=14,
                     color='white'
@@ -74,7 +74,7 @@ spot = go.Figure(
             dict(
                 text=utilities.gain_loss_text(utilities.gain_loss),
                 x=0.5,
-                y=0.38,
+                y=0.365,
                 font=dict(
                     size=14,
                     color=utilities.gain_loss_color(utilities.gain_loss)

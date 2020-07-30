@@ -29,7 +29,7 @@ app.layout = dbc.Container(
                         html.Div(
                             className='div-for-table',                                                       
                             children=[
-                                table.generate_table(table.df)
+                                table.generate_table(table.data)
                             ], 
                             style={
                                 'display': 'inline-block', 
@@ -45,20 +45,21 @@ app.layout = dbc.Container(
                         dbc.Row(
                             [
                                 dcc.Graph(
-                                    figure=donuts.buy, 
-                                    style={
-                                        'width': '50%', 
-                                        'display': 'inline-block'
-                                    }
-                                ),
-                                dcc.Graph(
                                     figure=donuts.spot, 
                                     style={
                                         'width': '50%', 
                                         'display': 'inline-block'
                                     }
-                                ),  
-                            ], 
+                                ),
+                                dbc.Table(
+                                    table.table_header + table.table_body, 
+                                    style={
+                                        'width': '50%', 
+                                        'display': 'inline-block',
+                                        'color':'white'
+                                    }
+                                 )
+                            ],
                             style={
                                 'height': '100%'
                             }

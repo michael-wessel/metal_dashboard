@@ -29,17 +29,18 @@ spot_price = '${:,.2f}'.format(df['Spot Price'].sum())
 delta = ((df['Spot Price'].sum() - df['Purchase Price'].sum()) / df['Purchase Price'].sum())
 gain_loss = '{:.2%}'.format(delta)
 
-# Format currency columns for html table
-df['Purchase Price'] = df['Purchase Price'].map('${:,.2f}'.format)
-df['Spot Price'] = df['Spot Price'].map('${:,.2f}'.format)
-
-# B/E cost metric
+# B/E cost metrics and table figures
+silver_spot_price = '${:,.2f}'.format(silver_spot)
 silver_cost = df.loc[df['Type'] == 'Silver', 'Purchase Price'].sum()
 silver_quantity = df.loc[df['Type'] == 'Silver', 'Weight'].sum()
 silver_cost_per_ounce = '${:,.2f}'.format(silver_cost / silver_quantity)
+silver_delta = '${:,.2f}'.format(silver_spot - (silver_cost / silver_quantity))
+
+gold_spot_price = '${:,.2f}'.format(gold_spot)
 gold_cost = df.loc[df['Type'] == 'Gold', 'Purchase Price'].sum()
 gold_quantity = df.loc[df['Type'] == 'Gold', 'Weight'].sum()
 gold_cost_per_ounce = '${:,.2f}'.format(gold_cost / gold_quantity)
+gold_delta = '${:,.2f}'.format(gold_spot - (gold_cost / gold_quantity))
 
 def gain_loss_color(gain_loss):
     '''
