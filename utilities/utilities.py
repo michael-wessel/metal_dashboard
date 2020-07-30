@@ -16,7 +16,7 @@ silver_api = quandl.get("LBMA/SILVER.1", start_date=ten_years_ago, end_date=toda
 silver_api.reset_index(level=0, inplace=True)
 silver_spot = silver_api.loc[silver_api['Date'] == silver_api['Date'].max(), 'USD'].iloc[0]
 
-# Read in my data and add a 'Spot Price' column
+# Read in my data add a 'Spot Price' column
 df = pd.read_csv('C:/Users/mwessel001/Projects/holdings/data/holdings.csv')
 df['Weight'] = df['Troy Ounces'] * df['Quantity']
 df['Spot Price'] = np.where(df['Type'] == 'Gold',
@@ -27,12 +27,24 @@ df['Spot Price'] = np.where(df['Type'] == 'Gold',
 purchase_price = '${:,.2f}'.format(df['Purchase Price'].sum())
 spot_price = '${:,.2f}'.format(df['Spot Price'].sum())
 delta = ((df['Spot Price'].sum() - df['Purchase Price'].sum()) / df['Purchase Price'].sum())
-gain_loss = "{:.2%}".format(delta)
+gain_loss = '{:.2%}'.format(delta)
+
+# Format currency columns for html table
+df['Purchase Price'] = df['Purchase Price'].map('${:,.2f}'.format)
+df['Spot Price'] = df['Spot Price'].map('${:,.2f}'.format)
+
+# B/E cost metric
+silver_cost = df.loc[df['Type'] == 'Silver', 'Purchase Price'].sum()
+silver_quantity = df.loc[df['Type'] == 'Silver', 'Weight'].sum()
+silver_cost_per_ounce = '${:,.2f}'.format(silver_cost / silver_quantity)
+gold_cost = df.loc[df['Type'] == 'Gold', 'Purchase Price'].sum()
+gold_quantity = df.loc[df['Type'] == 'Gold', 'Weight'].sum()
+gold_cost_per_ounce = '${:,.2f}'.format(gold_cost / gold_quantity)
 
 def gain_loss_color(gain_loss):
-    """ 
+    '''
     Function to return a color for gain or loss.
-    """
+    '''
     if delta > 0:
         color = 'limegreen'
     else:
@@ -40,9 +52,9 @@ def gain_loss_color(gain_loss):
     return color
 
 def gain_loss_text(gain_loss):
-    """ 
+    '''
     Function to return the formatted delta.
-    """
+    '''
     if delta > 0:
         symbol = '+'
     else:
